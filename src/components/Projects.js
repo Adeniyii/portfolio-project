@@ -1,23 +1,24 @@
 import React from "react"
 import Project from "../components/Project"
+import { getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Projects = () => {
   const {
     allContentfulProjects: { nodes },
   } = useStaticQuery(query)
 
-  const img = getImage(nodes[0].preview)
-  console.log(nodes[0].description.desc)
-
   return (
-    <section className="projects-section-flex">
-      {nodes.map(project => {
+    <section className="projects-section">
+      {nodes.map((project, index) => {
+        // Hack to assign alternating css order values
+        let order = [((index + 1) % 2) + 1, ((index + 2) % 2) + 1]
         return (
           <Project
-            img={getImage(project.preview)}
+            order={order}
+            key={project.id}
             title={project.title}
+            img={getImage(project.preview)}
             desc={project.description.desc.substr(0, 255)}
           ></Project>
         )

@@ -11,8 +11,8 @@ require("dotenv").config({
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Ifedayo Adeniyi`,
-    description: `Ifedayo's personal portfolio`,
+    title: `Ifedayo Adeniyi | Portfolio`,
+    description: `Ifedayo Adeniyi's personal portfolio`,
   },
   plugins: [
     `gatsby-plugin-image`,

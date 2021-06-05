@@ -5,6 +5,12 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const ComponentName = ({ data }) => {
   const {
+    site: {
+      siteMetadata: { title },
+    },
+  } = data
+
+  const {
     allContentfulProjects: { nodes: projects },
   } = data
 
@@ -12,6 +18,7 @@ const ComponentName = ({ data }) => {
 
   return (
     <Layout>
+      <title>{`Work - ${title}`}</title>
       <section className="workpage-section">
         {projects.map(project => {
           // return <h1>{project.frontendTools[1]}</h1>
@@ -40,6 +47,11 @@ export const query = graphql`
         preview {
           gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

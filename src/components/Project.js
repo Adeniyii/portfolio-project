@@ -22,29 +22,37 @@ const Project = prop => {
       <div className="project-tools-container">
         <div className="fe-tools project-tools">
           <h3>Frontend Tools</h3>
-          <p>gatsby</p>
-          <p>css</p>
-          <p>html</p>
+          <ul className="tool-list">
+            <li>gatsby</li>
+            <li>css</li>
+            <li>html</li>
+          </ul>
         </div>
 
         <div className="be-tools project-tools">
           <h3>Backend Tools</h3>
-          <p>Node</p>
-          <p>firebase</p>
-          <p>mongoDB</p>
+          <ul className="tool-list">
+            <li>Node</li>
+            <li>firebase</li>
+            <li>mongoDB</li>
+          </ul>
         </div>
 
         <div className="do-tools project-tools">
           <h3>Deployment</h3>
-          <p>Netlify</p>
-          <p>Heroku</p>
+          <ul className="tool-list">
+            <li>Netlify</li>
+            <li>Heroku</li>
+          </ul>
         </div>
 
         <div className="misc-tools project-tools">
           <h3>Miscellaneous Tools</h3>
-          <p>Wine 🍷</p>
-          <p>Choclate 🍫</p>
-          <p>Music 🎧</p>
+          <ul className="tool-list">
+            <li>Wine 🍷</li>
+            <li>Choclate 🍫</li>
+            <li>Music 🎧</li>
+          </ul>
         </div>
       </div>
     </article>

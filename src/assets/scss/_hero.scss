@@ -1,0 +1,126 @@
+.hero {
+  &-main-section {
+    width: 100%;
+    height: 90vh;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    gap: 12em;
+    max-width: 90%;
+    margin: auto auto;
+    align-items: center;
+  }
+
+  &-container-text {
+    width: 40%;
+  }
+
+  &-sub {
+    padding-right: 2em;
+  }
+
+  &-title {
+    font-size: 4.5em;
+    letter-spacing: -1.5px;
+    line-height: 110%;
+    font-family: $s-font;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+
+    #my-name {
+      font-family: $s-font;
+      background: $accent-color;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &-span {
+    font-family: "Bogart Trial";
+    font-weight: 500;
+    display: block;
+  }
+
+  &-container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 90%;
+    border-radius: 20px;
+    opacity: 1;
+    position: relative;
+    border: 1px solid #fff;
+    color: #fff;
+    /* background-color: #1f1e25; */
+    background: transparent;
+  }
+}
+
+// Decorative Gradient Blocks
+.deco-block {
+  width: 15%;
+  height: 10%;
+  border-radius: 20px;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale3d(0.8, 0.8, 0.8);
+  display: block;
+
+  &-tl {
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(
+        323.93deg,
+        rgba(10, 185, 149, 0.7) -32.24%,
+        rgba(10, 185, 149, 0) 57.93%
+      ),
+      #dacdff;
+  }
+
+  &-tr {
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(
+        323.93deg,
+        rgba(255, 216, 155, 0.8) -32.24%,
+        rgba(66, 39, 90, 0.2) 57.93%
+      ),
+      rgba(25, 84, 123, 0.8);
+  }
+
+  &-br {
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(
+        323.93deg,
+        #9f8189 -32.24%,
+        rgba(218, 205, 255, 0.3) 57.93%
+      ),
+      #fbeee6;
+  }
+
+  &-bl {
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(
+        323.93deg,
+        #faaca8 -39.75%,
+        rgba(218, 205, 255, 0.3) 61.37%
+      ),
+      #42275a;
+  }
+}
+
+.hero-image {
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}

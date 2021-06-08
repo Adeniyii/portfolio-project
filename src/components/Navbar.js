@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../css/styles.css"
 import twitter from "../assets/images/twitter-svgrepo-com.svg"
 import linkedin from "../assets/images/linkedin-svgrepo-com.svg"
 import mail from "../assets/images/mail-svgrepo-com.svg"

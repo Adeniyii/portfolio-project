@@ -1,0 +1,26 @@
+@import "config";
+@import "navbar";
+@import "hero";
+@import "projects";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: $p-font;
+  list-style-type: none;
+  text-decoration: none;
+  border-style: border-box;
+
+  &::selection {
+    background-color: $accent-color;
+  }
+}
+
+body {
+  background-color: #13141c;
+}
+
+section {
+  margin: auto;
+}

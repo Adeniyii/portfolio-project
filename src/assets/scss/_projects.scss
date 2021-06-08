@@ -1,0 +1,94 @@
+.projects-section {
+  padding: 0 2em;
+  max-width: 90%;
+  color: #fff;
+  margin-top: 10em;
+
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 3em;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    gap: 3em;
+    margin: 0 0 15em 0;
+    /* background: #1f1e25; */
+    /* border: 1px solid #fff; */
+    padding: 2em;
+    border-radius: 20px;
+  }
+
+  .project-article-top {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 60%;
+
+    .article-image {
+      width: 60%;
+      height: 50vh;
+      opacity: 0.8;
+      /* border-radius: 10px; */
+    }
+  }
+
+  // Description
+  .project-description {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+
+    h2 {
+      font-size: 3.5em;
+      letter-spacing: -1px;
+      line-height: 110%;
+      font-weight: 400;
+      text-transform: lowercase;
+      font-family: "Bogart Trial";
+    }
+
+    p {
+      line-height: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  // Tools
+  .project-tools-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+
+    .project-tools {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      gap: 2em;
+
+      .tool-list {
+        line-height: 2;
+        text-transform: capitalize;
+      }
+
+      h3 {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 60px;
+          height: 4px;
+          top: -10px;
+          left: 0;
+          background: $accent-color;
+        }
+      }
+    }
+  }
+}

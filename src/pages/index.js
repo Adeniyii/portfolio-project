@@ -10,6 +10,7 @@ export default function Home({ data }) {
       siteMetadata: { title, description },
     },
   } = data
+  console.log(description)
 
   return (
     <Layout>
@@ -30,6 +31,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }

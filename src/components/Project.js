@@ -17,6 +17,8 @@ const Project = prop => {
         <div className="project-description" style={{ order: prop.order[1] }}>
           <h2 className="project-desc-title">{prop.title}</h2>
           <p className="project-desc-para">{prop.desc}</p>
+          <button className="live-button">View Live</button>
+          <button className="github-button">View Code</button>
         </div>
       </div>
       <div className="project-tools-container">

@@ -12,11 +12,17 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Ifedayo Adeniyi | Portfolio`,
-    description: `Ifedayo Adeniyi's personal portfolio`,
+    description: `Ifedayo Adeniyi's personal portfolio and blog.`,
+    author: `Ifedayo Adeniyi`,
+    twitterUserName: `11thStrawhat`,
+    image: `/SEOImage.png`,
+    // siteUrl: `todo.com`
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     // Needed for dynamic images
     {

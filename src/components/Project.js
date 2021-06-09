@@ -1,4 +1,5 @@
 import React from "react"
+import { FaGithub } from "react-icons/fa"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Project = prop => {
@@ -17,8 +18,17 @@ const Project = prop => {
         <div className="project-description" style={{ order: prop.order[1] }}>
           <h2 className="project-desc-title">{prop.title}</h2>
           <p className="project-desc-para">{prop.desc}</p>
-          <button className="live-button">View Live</button>
-          <button className="github-button">View Code</button>
+          <div className="project-links">
+            <a href="#" className="live-button">
+              View live
+            </a>
+            <a href="#" className="github-button">
+              Source code
+              <span className="git-icon">
+                <FaGithub />
+              </span>
+            </a>
+          </div>
         </div>
       </div>
       <div className="project-tools-container">

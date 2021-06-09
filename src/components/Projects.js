@@ -10,7 +10,7 @@ const Projects = () => {
 
   return (
     <section className="projects-section">
-      <h1 className="section-title">Selected projects</h1>
+      <h1 className="section-title">Featured projects</h1>
       {nodes.map((project, index) => {
         // Hack to assign alternating css order values
         let order = [((index + 2) % 2) + 1, ((index + 1) % 2) + 1]

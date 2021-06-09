@@ -6,7 +6,19 @@
 
   .section-title {
     font-size: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
+    letter-spacing: 0.2em;
+    position: relative;
+    line-height: 1.7;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      bottom: 0;
+      height: 1px;
+      background-color: rgba(212, 212, 255, 0.4);
+    }
   }
 
   article {
@@ -57,6 +69,36 @@
       line-height: 1.5rem;
       font-weight: 500;
     }
+
+    .project-links {
+      display: flex;
+      gap: 1em;
+      margin-top: 2em;
+    }
+
+    a {
+      padding: 0.7em 0.9em;
+      border-radius: 5px;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+    }
+
+    .live-button {
+      border: 1px solid $p-color;
+    }
+
+    .github-button {
+      background: #202230;
+      position: relative;
+      // font-weight: 700;
+      // color: $s-color;
+
+      .git-icon {
+        margin: auto 0 auto 1em;
+        padding-top: 5px;
+        // position: absolute;
+      }
+    }
   }
 
   // Tools
@@ -83,7 +125,7 @@
           content: "";
           position: absolute;
           width: 60px;
-          height: 4px;
+          height: 2px;
           top: -10px;
           left: 0;
           background: $accent-color;

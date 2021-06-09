@@ -1,0 +1,39 @@
+.icon {
+  @include icon;
+  border-bottom: none;
+  position: relative;
+
+  > .label {
+    display: none;
+  }
+
+  &.alt {
+    &:before {
+      background-color: $accent-color;
+      border-radius: 100%;
+      color: $p-color;
+      display: inline-block;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      width: 2em;
+    }
+  }
+}
+
+// for footer icons
+a.icon {
+  &.alt {
+    &:hover {
+      &:before {
+        background-color: $accent-color;
+      }
+    }
+
+    &:active {
+      &:before {
+        background-color: red;
+      }
+    }
+  }
+}

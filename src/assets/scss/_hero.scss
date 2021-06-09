@@ -21,12 +21,15 @@
 
   &-sub {
     padding-right: 2em;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    margin-top: 2em;
   }
 
   &-title {
     font-size: 4.5em;
     letter-spacing: -1.5px;
-    line-height: 110%;
+    line-height: 1;
     font-family: $s-font;
     font-weight: 500;
     transition: all 0.2s ease-in-out;

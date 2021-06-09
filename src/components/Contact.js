@@ -1,9 +1,10 @@
 import React from "react"
+import { FaEnvelope, FaPhoneAlt, FaHome } from "react-icons/fa"
 
 const Contact = props => (
   <section id="contact">
     <div className="inner">
-      <section>
+      <section className="section-1">
         <form method="post" action="#">
           <div className="field half first">
             <label htmlFor="name">Name</label>
@@ -30,28 +31,34 @@ const Contact = props => (
       <section className="split">
         <section>
           <div className="contact-method">
-            <span className="icon alt fa-envelope"></span>
+            <span className="icon alt fa-envelope">
+              <FaEnvelope />
+            </span>
             <h3>Email</h3>
-            <a href="#">information@untitled.tld</a>
+            <a href="#">ifedayoadeniyi@gmail.com</a>
           </div>
         </section>
         <section>
           <div className="contact-method">
-            <span className="icon alt fa-phone"></span>
+            <span className="icon alt fa-phone">
+              <FaPhoneAlt />
+            </span>
             <h3>Phone</h3>
-            <span>(000) 000-0000 x12387</span>
+            <span>(+234) 808-1523 197</span>
           </div>
         </section>
-        <section>
+        <section id="last-sect">
           <div className="contact-method">
-            <span className="icon alt fa-home"></span>
+            <span className="icon alt fa-home">
+              <FaHome />
+            </span>
             <h3>Address</h3>
             <span>
               1234 Somewhere Road #5432
               <br />
-              Nashville, TN 00000
+              Lagos, LG 100001
               <br />
-              United States of America
+              United States of Nigeria
             </span>
           </div>
         </section>

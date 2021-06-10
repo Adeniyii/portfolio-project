@@ -2,14 +2,15 @@
   padding: 0 2em;
   max-width: 90%;
   color: #fff;
-  margin-top: 10em;
+  margin-top: 15em;
 
   .section-title {
-    font-size: 2em;
-    margin-bottom: 2em;
-    letter-spacing: 0.2em;
+    font-size: 1.5em;
+    margin-bottom: 4em;
+    letter-spacing: 0.4em;
     position: relative;
     line-height: 1.7;
+    text-transform: uppercase;
 
     &::before {
       position: absolute;
@@ -25,7 +26,7 @@
     display: flex;
     flex-direction: column;
     max-height: 80vh;
-    gap: 3em;
+    gap: 4em;
     margin: 0 0 15em 0;
     /* background: #1f1e25; */
     /* border: 1px solid #fff; */
@@ -80,23 +81,24 @@
       padding: 0.7em 0.9em;
       border-radius: 5px;
       cursor: pointer;
-      letter-spacing: 0.05em;
-    }
+      letter-spacing: 0.08em;
 
-    .live-button {
-      border: 1px solid $p-color;
-    }
+      &.live-button {
+        border: 1px solid $p-color;
+      }
 
-    .github-button {
-      background: #202230;
-      position: relative;
-      // font-weight: 700;
-      // color: $s-color;
+      &.github-button {
+        display: flex;
+        align-items: center;
+        background: #202230;
+        // font-weight: 700;
+        // color: $s-color;
 
-      .git-icon {
-        margin: auto 0 auto 1em;
-        padding-top: 5px;
-        // position: absolute;
+        .git-icon {
+          margin: auto 0 auto 1em;
+          // padding-top: 5px;
+          // position: absolute;
+        }
       }
     }
   }

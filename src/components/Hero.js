@@ -1,5 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Lottie from "./Lottie"
+import animationData from "../assets/asset-animation/62773-yoga-developer.json"
 
 const Hero = () => {
   return (
@@ -16,16 +18,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero-container-logo">
-          <div className="deco-block deco-block-tl"></div>
+          {/* <div className="deco-block deco-block-tl"></div>
           <div className="deco-block deco-block-tr"></div>
           <div className="deco-block deco-block-bl"></div>
-          <div className="deco-block deco-block-br"></div>
-          <StaticImage
-            src="../assets/images/hennie-stander-8E5HawfqCMM-unsplash.jpg"
-            alt="Jelly Fish"
-            placeholder="blurred"
-            className="hero-image"
-          />
+          <div className="deco-block deco-block-br"></div> */}
+          <Lottie animationData={animationData} />
         </div>
       </div>
     </section>

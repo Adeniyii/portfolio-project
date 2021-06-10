@@ -1,29 +1,18 @@
 import React from "react"
-import { graphql } from "gatsby"
+import animationData from "../assets/asset-animation/64171-404-not-found.json"
+import Lottie from "../components/Lottie"
 
-const E404 = ({ data }) => {
-  const {
-    site: {
-      siteMetadata: { title },
-    },
-  } = data
+const E404 = () => {
+  const styles = {
+    "max-width": "70vw",
+    "max-height": "60%",
+    margin: "auto",
+  }
 
   return (
-    <div>
-      <title>{`Error - ${title}`}</title>
-      <h1>Page not found!!!!</h1>
+    <div className="error-container" style={styles}>
+      <Lottie animationData={animationData} />
     </div>
   )
 }
-
-export const query = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
-
 export default E404

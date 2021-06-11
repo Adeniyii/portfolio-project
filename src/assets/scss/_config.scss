@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 
 @font-face {
   font-family: "Bogart Trial";
@@ -7,7 +8,8 @@
 
 /* === Variables === */
 
-$p-font: "Lato", sans-serif;
+// $p-font: "Lato", sans-serif;
+$p-font: "Montserrat", sans-serif;
 $s-font: "Bogart Trial";
 $p-color: rgb(242, 241, 237);
 $s-color: rgb(19, 20, 28);

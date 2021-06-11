@@ -20,20 +20,23 @@ const Project = prop => {
           <p className="project-desc-para">{prop.desc}</p>
           <div className="project-links">
             <a href="#" className="live-button">
-              View live
+              <span>View live</span>
             </a>
             <a href="#" className="github-button">
-              Source code
               <span className="git-icon">
                 <FaGithub />
               </span>
+              <span>Source code</span>
             </a>
           </div>
         </div>
       </div>
-      <div className="project-tools-container">
+      <div
+        className="project-tools-container"
+        style={{ justifyContent: prop.custStyle }}
+      >
         <div className="fe-tools project-tools">
-          <h3>Frontend Tools</h3>
+          <h3>Frontend</h3>
           <ul className="tool-list">
             <li>gatsby</li>
             <li>css</li>
@@ -42,7 +45,7 @@ const Project = prop => {
         </div>
 
         <div className="be-tools project-tools">
-          <h3>Backend Tools</h3>
+          <h3>Backend</h3>
           <ul className="tool-list">
             <li>Node</li>
             <li>firebase</li>
@@ -59,7 +62,7 @@ const Project = prop => {
         </div>
 
         <div className="misc-tools project-tools">
-          <h3>Miscellaneous Tools</h3>
+          <h3>Miscellaneous</h3>
           <ul className="tool-list">
             <li>Wine 🍷</li>
             <li>Choclate 🍫</li>

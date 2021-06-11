@@ -33,11 +33,11 @@ nav {
     span::before {
       content: "";
       display: block;
-      width: 100%;
+      width: 90%;
       position: absolute;
-      height: 3px;
+      height: 2px;
       bottom: 10px;
-      left: 0;
+      left: 3px;
       background: $accent-color;
       opacity: 0;
       transform: translate3d(0px, 5px, 0);

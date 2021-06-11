@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Lottie from "./Lottie"
-import animationData from "../assets/asset-animation/62773-yoga-developer.json"
+import animationData from "../assets/asset-animation/lf30_editor_gs7q6vle.json"
 
 const Hero = () => {
   return (

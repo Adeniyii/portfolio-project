@@ -10,27 +10,27 @@ const Lottie = props => {
       container: animationContainer.current,
       renderer: "svg",
       loop: true,
-      autoplay: true,
+      autoplay: false,
       animationData: props.animationData,
     })
 
     return () => anim.destroy()
   }, [])
 
-  // function handleStop() {
-  //   anim.pause()
-  // }
+  function handleStop() {
+    anim.pause()
+  }
 
-  // function handleStart() {
-  //   anim.play()
-  // }
+  function handleStart() {
+    anim.play()
+  }
 
   return (
-    <div>
-      <div>
-        <div ref={animationContainer}></div>
-      </div>
-    </div>
+    <div
+      onMouseOver={handleStart}
+      onMouseLeave={handleStop}
+      ref={animationContainer}
+    ></div>
   )
 }
 

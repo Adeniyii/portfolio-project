@@ -23,6 +23,18 @@
 
 body {
   background-color: #13141c;
+
+  &::-webkit-scrollbar {
+    width: 0.25em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent-color;
+  }
 }
 
 section {

@@ -9,7 +9,7 @@
     flex-direction: row;
     width: 90%;
     height: 100%;
-    gap: 12em;
+    gap: 6em;
     max-width: 90%;
     margin: auto auto;
     align-items: center;
@@ -20,7 +20,7 @@
   }
 
   &-sub {
-    padding-right: 2em;
+    // padding-right: 2em;
     letter-spacing: 0.1em;
     line-height: 2;
     margin-top: 2em;
@@ -50,16 +50,13 @@
   }
 
   &-container-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     width: 60%;
-    height: 90%;
-    // opacity: 1;
-    // position: relative;
+    height: 100%;
     // border: 1px solid #fff;
     /* background-color: #1f1e25; */
-    background: transparent;
   }
 }
 

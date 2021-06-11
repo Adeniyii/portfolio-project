@@ -14,10 +14,12 @@ const Projects = () => {
       {nodes.map((project, index) => {
         // Hack to assign alternating css order values
         let order = [((index + 2) % 2) + 1, ((index + 1) % 2) + 1]
+        let style = order[0] === 1 ? "flex-start" : "flex-end"
         return (
           <Project
             order={order}
             key={project.id}
+            custStyle={style}
             title={project.title}
             img={getImage(project.preview)}
             desc={project.description.desc.substr(0, 255)}

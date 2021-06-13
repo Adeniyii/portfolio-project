@@ -3,7 +3,9 @@ import { FaEnvelope, FaPhoneAlt, FaHome } from "react-icons/fa"
 
 const Contact = props => (
   <>
-    <h1 className="contact-title">CONTACT</h1>
+    <h1 id="contact-head" className="contact-title">
+      CONTACT
+    </h1>
     <section id="contact">
       <div className="inner">
         <section className="section-1">

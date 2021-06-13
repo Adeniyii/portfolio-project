@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap");
 
 @font-face {
   font-family: "Bogart Trial";
@@ -19,3 +19,10 @@ $accent-color: linear-gradient(
     rgba(218, 205, 255, 0.5) 61.37%
   ),
   #734b6d;
+$accent-color-2: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1) 0,
+    rgba(255, 255, 255, 0.05) 45%,
+    rgba(255, 255, 255, 0) 55%
+  ),
+  linear-gradient(to bottom right, #d73c38, #ee622d);

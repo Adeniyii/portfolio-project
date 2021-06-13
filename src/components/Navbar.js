@@ -7,18 +7,19 @@ const Navbar = () => {
   return (
     <nav className="nav-flex">
       <ul className="l-nav-list">
-        <li className="list-item">
-          <Link className="work-item" to="/work/">
-            <span>Work</span>
+        <li className="home-icon">
+          <Link className="home-item" to="/">
+            <span className="home-item-l">IFE</span>
+            <span className="home-item-r">DENIYI</span>
           </Link>
         </li>
         <li className="list-item">
-          <Link className="about-item" to="/about/">
+          <Link className="about-item" to="/about/" activeClassName="highlight">
             <span>About</span>
           </Link>
         </li>
         <li className="list-item">
-          <Link className="wip-item" to="/wip/">
+          <Link className="wip-item" to="/wip/" activeClassName="highlight">
             <span>Wip</span>
           </Link>
         </li>

@@ -2,24 +2,40 @@
   padding: 0 2em;
   max-width: 90%;
   color: #fff;
-  margin-top: 15em;
+  margin-top: 7em;
+  position: relative;
 
   .section-title {
-    font-size: 1.5em;
-    margin-bottom: 4em;
-    letter-spacing: 0.4em;
-    position: relative;
+    font-size: 8em;
+    font-weight: 900;
+    position: sticky;
+    opacity: 0.2;
+    top: 0;
+    transform: translate(-50px, 80px);
+    // margin-bottom: 4em;
+    // top: -145px;
+    // left: -30px;
+    letter-spacing: 0.2em;
     line-height: 1.7;
     text-transform: uppercase;
+    background: linear-gradient(
+        5.85deg,
+        #42275a -39.75%,
+        rgba(218, 205, 255, 1) 61.37%
+      ),
+      #734b6d;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      bottom: 0;
-      height: 1px;
-      background-color: rgba(212, 212, 255, 0.4);
-    }
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 100%;
+    //   bottom: 0;
+    //   height: 1px;
+    //   background-color: rgba(212, 212, 255, 0.4);
+    // }
   }
 
   article {
@@ -28,7 +44,7 @@
     max-height: 85vh;
     gap: 2em;
     margin: 0 0 15em 0;
-    background: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     padding: 2em;
     border-radius: 20px;
@@ -88,8 +104,8 @@
 
       &.live-button {
         // border: 1px solid $p-color;
-        background: rgb(96, 76, 109);
-        // background: rgb(255, 115, 126);
+        // background: rgb(96, 76, 109);
+        background: $accent-color-2;
         font-weight: 100;
         overflow: hidden;
         padding: 0.7em 1.3em;
@@ -117,15 +133,13 @@
         display: flex;
         align-items: center;
         position: relative;
+        padding-right: 0.5em;
         gap: 1em;
 
         .git-icon {
-          // margin: auto 0 auto 1em;
-          // padding-top: 5px;
           position: absolute;
-          right: -25px;
+          right: -17px;
           bottom: 9px;
-          // opacity: 0;
         }
 
         &::after {
@@ -135,7 +149,7 @@
           height: 2px;
           bottom: 0;
           right: left;
-          background: $accent-color;
+          background: $accent-color-2;
           transform: scaleX(0);
           transition: transform 0.15s ease-in-out;
           transform-origin: bottom right;
@@ -157,7 +171,7 @@
   // Tools
   .project-tools-container {
     display: flex;
-    gap: 6.2em;
+    gap: 5.8em;
     height: 40%;
 
     .project-tools {

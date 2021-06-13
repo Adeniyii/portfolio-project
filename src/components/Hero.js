@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Lottie from "./Lottie"
-import animationData from "../assets/asset-animation/lf30_editor_gs7q6vle.json"
+import animationData from "../assets/asset-animation/lf30_editor_z7afqwvr.json"
 
 const Hero = () => {
   return (
@@ -9,13 +9,16 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-container-text">
           <h1 className="hero-title">
-            Hi, I’m <span id="my-name">Dáyo</span>.
-            <span className="hero-span"> A Developer.</span>
+            Hi, i’m <span id="my-name">Dáyo.</span>
+            <span className="hero-span"> A web-developer.</span>
           </h1>
           <p className="hero-sub">
             I’m also a UI/UX designer and general doodler with a keen eye for
             creating engaging UI, bringing products to life.
           </p>
+          <a href="#contact-head" className="hero-cta">
+            <span>Say Hi!</span>
+          </a>
         </div>
         <div className="hero-container-logo">
           {/* <div className="deco-block deco-block-tl"></div>

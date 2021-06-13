@@ -1,11 +1,13 @@
 nav {
   top: 0;
   position: sticky;
-  font-size: 1.1em;
+  font-size: 1em;
   display: flex;
-  padding: 1.5em 0em;
+  padding: 1em 4em;
   background: rgba(19, 20, 28, 0.5);
-  gap: 35%;
+  // gap: 35%;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -17,34 +19,69 @@ nav {
   }
 
   ul {
-    flex-grow: 1;
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: auto auto auto;
+    // flex-grow: 1;
+    // display: grid;
+    // justify-content: space-evenly;
+    // gap: ;
+    // grid-template-columns: auto auto auto;
+
+    &.l-nav-list {
+      display: flex;
+      align-items: center;
+      gap: 4em;
+    }
+    &.r-nav-list {
+      display: flex;
+      gap: 3em;
+    }
+  }
+
+  .home-item {
+    &-l {
+      font-size: 1em;
+      font-weight: 500;
+      background: $accent-color-2;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &-r {
+      font-size: 1.5em;
+      font-weight: 900;
+      background: $accent-color;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   .list-item {
+    display: flex;
+    align-items: center;
+
     a {
       // z-index: 2;
       padding: 1.3em 0;
       position: relative;
     }
-
-    span::before {
-      content: "";
-      display: block;
-      width: 90%;
-      position: absolute;
-      height: 2px;
-      bottom: 10px;
-      left: 3px;
-      background: $accent-color;
-      opacity: 0;
-      transform: translate3d(0px, 5px, 0);
-      transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    span {
+      &::before {
+        content: "";
+        display: block;
+        width: 90%;
+        position: absolute;
+        height: 2px;
+        bottom: 10px;
+        left: 3px;
+        background: $accent-color;
+        opacity: 0;
+        transform: translate3d(0px, 5px, 0);
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
     }
 
-    a:hover span::before {
+    &:hover span::before {
       opacity: 1;
       transform: translateZ(0) scale3d(1.1, 1.1, 1.1) rotate(-2deg);
     }

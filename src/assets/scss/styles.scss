@@ -9,12 +9,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: rgb(209, 210, 211);
   font-family: $p-font;
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-  // scrollbar-color: $s-color $accent-color $p-color;
 
   &::selection {
     background-color: $accent-color;
@@ -23,6 +22,7 @@
 
 body {
   background-color: #13141c;
+  transition: all 1s ease;
 
   &::-webkit-scrollbar {
     width: 0.25em;
@@ -39,4 +39,11 @@ body {
 
 section {
   margin: auto;
+}
+
+.highlight {
+  background: $accent-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

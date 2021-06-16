@@ -19,10 +19,10 @@ const Project = prop => {
           <h2 className="project-desc-title">{prop.title}</h2>
           <p className="project-desc-para">{prop.desc}</p>
           <div className="project-links">
-            <a href="#" className="live-button">
+            <a href={prop.live} className="live-button" target="_blank">
               <span>View live</span>
             </a>
-            <a href="#" className="github-button">
+            <a href={prop.git} className="github-button" target="_blank">
               <span className="git-icon">
                 <FaGithub />
               </span>

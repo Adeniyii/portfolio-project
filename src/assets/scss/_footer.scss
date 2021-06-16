@@ -24,15 +24,7 @@
 
         a {
           //   text-decoration: underline;
-          background: linear-gradient(
-              5.85deg,
-              #42275a -39.75%,
-              rgba(218, 205, 255, 1) 61.37%
-            ),
-            #734b6d;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: $p-color;
         }
       }
     }

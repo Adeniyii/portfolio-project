@@ -21,6 +21,8 @@ const Projects = () => {
             key={project.id}
             custStyle={style}
             title={project.title}
+            live={project.liveLink}
+            git={project.gitHubLink}
             img={getImage(project.preview)}
             desc={project.description.desc.substr(0, 255)}
           ></Project>
@@ -40,6 +42,7 @@ const query = graphql`
         devopsTools
         frontendTools
         gitHubLink
+        liveLink
         id
         slug
         title

@@ -10,11 +10,8 @@
     font-weight: 900;
     position: sticky;
     opacity: 0.2;
-    top: 0;
-    transform: translate(-50px, 80px);
-    // margin-bottom: 4em;
-    // top: -145px;
-    // left: -30px;
+    top: 70px;
+    transform: translate(-50px, 20px);
     letter-spacing: 0.2em;
     line-height: 1.7;
     text-transform: uppercase;
@@ -27,21 +24,12 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 100%;
-    //   bottom: 0;
-    //   height: 1px;
-    //   background-color: rgba(212, 212, 255, 0.4);
-    // }
   }
 
   article {
     display: flex;
     flex-direction: column;
-    max-height: 85vh;
+    // max-height: 90vh;
     gap: 2em;
     margin: 0 0 15em 0;
     background-color: rgba(0, 0, 0, 0.3);
@@ -84,7 +72,8 @@
 
     p {
       line-height: 1.5rem;
-      font-weight: 500;
+      font-weight: 300;
+      letter-spacing: 0.1em;
     }
 
     .project-links {

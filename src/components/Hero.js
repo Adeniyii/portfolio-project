@@ -1,6 +1,6 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import Lottie from "./Lottie"
+import { StaticImage } from "gatsby-plugin-image"
 import animationData from "../assets/asset-animation/lf30_editor_z7afqwvr.json"
 
 const Hero = () => {
@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero-container-text">
           <h1 className="hero-title">
             Hi, i’m <span id="my-name">Dáyo.</span>
-            <span className="hero-span"> A web-developer.</span>
+            <span className="hero-span"> A software-dev.</span>
           </h1>
           <p className="hero-sub">
             I’m also a UI/UX designer and general doodler with a keen eye for

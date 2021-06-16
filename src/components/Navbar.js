@@ -27,17 +27,20 @@ const Navbar = () => {
 
       <ul className="r-nav-list">
         <li className="nav-list-icon">
-          <a href="https://twitter.com/11thStrawhat">
+          <a href="https://twitter.com/11thStrawhat" target="_blank">
             <img src={twitter} alt="Twitter Link" />
           </a>
         </li>
         <li className="nav-list-icon">
-          <a href="https://www.linkedin.com/in/ifedayo-ijabadeniyi-904635178/">
+          <a
+            href="https://www.linkedin.com/in/ifedayo-ijabadeniyi-904635178/"
+            target="_blank"
+          >
             <img src={linkedin} alt="LinkedIn Link" />
           </a>
         </li>
         <li className="nav-list-icon">
-          <a href="#">
+          <a href="#" target="_blank">
             <img src={mail} alt="Mail Link" />
           </a>
         </li>

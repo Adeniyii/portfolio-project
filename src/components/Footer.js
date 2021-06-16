@@ -37,10 +37,6 @@ const Footer = () => {
           <li>
             &copy; 2021 by <a href="#">ifedeniyi</a>. All rights reserved.
           </li>
-          {/* <li>
-            Design: &nbsp;
-            <a href="#">Ifedeniyi</a>
-          </li> */}
         </ul>
       </div>
     </section>

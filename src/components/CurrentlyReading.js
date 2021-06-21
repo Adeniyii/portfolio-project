@@ -15,6 +15,7 @@ const CurrentlyReading = () => {
         {nodes.map(book => {
           return (
             <Books
+              key={book.id}
               img={getImage(book.bookImage)}
               author={book.author}
               title={book.bookTitle}
@@ -30,6 +31,7 @@ const query = graphql`
   query currReading {
     allContentfulCurrentlyReading {
       nodes {
+        id
         author
         bookTitle
         bookImage {

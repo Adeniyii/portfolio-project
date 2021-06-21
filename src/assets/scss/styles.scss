@@ -7,6 +7,7 @@
 @import "footer";
 @import "about";
 @import "currentlyReading";
+@import "mediaQueries";
 
 * {
   margin: 0;
@@ -46,8 +47,12 @@ section {
 }
 
 .highlight {
-  background: $accent-color;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: relative;
+  color: tomato;
+  &::before {
+    position: absolute;
+    bottom: 20px;
+    left: -11px;
+    content: "-";
+  }
 }

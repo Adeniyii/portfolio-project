@@ -1,6 +1,5 @@
 import React from "react"
 import Lottie from "./Lottie"
-import { StaticImage } from "gatsby-plugin-image"
 import animationData from "../assets/asset-animation/lf30_editor_z7afqwvr.json"
 
 const Hero = () => {
@@ -9,7 +8,7 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-container-text">
           <h1 className="hero-title">
-            Hi, i’m <span id="my-name">Dáyo.</span>
+            Hi, i’m <span id="my-name">Ifedáyo.</span>
             <span className="hero-span"> A software-dev.</span>
           </h1>
           <p className="hero-sub">
@@ -21,10 +20,6 @@ const Hero = () => {
           </a>
         </div>
         <div className="hero-container-logo">
-          {/* <div className="deco-block deco-block-tl"></div>
-          <div className="deco-block deco-block-tr"></div>
-          <div className="deco-block deco-block-bl"></div>
-          <div className="deco-block deco-block-br"></div> */}
           <Lottie animationData={animationData} />
         </div>
       </div>

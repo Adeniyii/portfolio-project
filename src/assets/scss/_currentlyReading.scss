@@ -1,13 +1,36 @@
 .curr-reading {
-  height: 85vh;
-  margin: 0 0 15em;
+  padding: 3em 0;
+  margin: 0 0 20em;
+  overflow: hidden;
 
   &-heading {
-    // text-align: center;
+    width: fit-content;
+    position: relative;
     font-family: $s-font;
     font-size: 2.5em;
-    margin-bottom: 2em;
-    padding: 0 3em;
+    margin: 0 3em 4em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 290%;
+      height: 1px;
+      left: 110%;
+      top: 50%;
+      background-color: $p-color;
+      opacity: 0.2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 1px;
+      right: 110%;
+      bottom: 50%;
+      background-color: $p-color;
+      opacity: 0.2;
+    }
   }
 
   &-grid {
@@ -17,7 +40,6 @@
     margin: auto;
     max-width: 80%;
     row-gap: 5em;
-    // gap: 5em;
 
     .book-container {
       width: fit-content;
@@ -30,16 +52,14 @@
     }
 
     .book-title {
-      font-weight: 400;
+      font-weight: 100;
       font-size: 1.1em;
       margin-bottom: 0.5em;
-      // width: fit-content;
     }
 
     .book-author {
-      font-weight: 400;
+      font-weight: 500;
       font-size: 0.8em;
-      // width: fit-content;
     }
   }
 }

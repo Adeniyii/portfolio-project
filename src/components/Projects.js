@@ -10,9 +10,9 @@ const Projects = () => {
 
   return (
     <section className="projects-section">
-      <h1 className="section-title">Projects</h1>
+      <h1 className="section-title">/ˈprɒdʒ.ekt/</h1>
       {nodes.map((project, index) => {
-        // Hack to assign alternating css order values
+        // Logic to assign alternating css order values
         let order = [((index + 2) % 2) + 1, ((index + 1) % 2) + 1]
         let style = order[0] === 1 ? "flex-start" : "flex-end"
         return (
@@ -24,7 +24,11 @@ const Projects = () => {
             live={project.liveLink}
             git={project.gitHubLink}
             img={getImage(project.preview)}
-            desc={project.description.desc.substr(0, 255)}
+            deTools={project.devopsTools}
+            beTools={project.backendTools}
+            feTools={project.frontendTools}
+            miscTools={project.miscellaneousTools}
+            desc={project.description.desc}
           ></Project>
         )
       })}
@@ -41,6 +45,7 @@ const query = graphql`
         backendTools
         devopsTools
         frontendTools
+        miscellaneousTools
         gitHubLink
         liveLink
         id

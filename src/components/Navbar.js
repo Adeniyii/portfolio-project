@@ -1,49 +1,45 @@
 import React from "react"
 import { Link } from "gatsby"
-import twitter from "../assets/images/twitter-svgrepo-com.svg"
-import linkedin from "../assets/images/linkedin-svgrepo-com.svg"
-import mail from "../assets/images/mail-svgrepo-com.svg"
+import { CgMenuGridO } from "react-icons/cg"
 const Navbar = () => {
   return (
     <nav className="nav-flex">
-      <ul className="l-nav-list">
-        <li className="home-icon">
-          <Link className="home-item" to="/">
-            <span className="home-item-l">IFE</span>
-            <span className="home-item-r">DENIYI</span>
-          </Link>
-        </li>
-        <li className="list-item">
-          <Link className="about-item" to="/about/" activeClassName="highlight">
-            <span>About</span>
-          </Link>
-        </li>
-        <li className="list-item">
-          <Link className="wip-item" to="/wip/" activeClassName="highlight">
-            <span>Wip</span>
-          </Link>
-        </li>
-      </ul>
-
-      <ul className="r-nav-list">
-        <li className="nav-list-icon">
-          <a href="https://twitter.com/11thStrawhat" target="_blank">
-            <img src={twitter} alt="Twitter Link" />
-          </a>
-        </li>
-        <li className="nav-list-icon">
-          <a
-            href="https://www.linkedin.com/in/ifedayo-ijabadeniyi-904635178/"
-            target="_blank"
+      <ul className="nav-container">
+        <li>
+          <Link
+            className="home-item nav-link"
+            to="/"
+            activeClassName="highlight"
           >
-            <img src={linkedin} alt="LinkedIn Link" />
-          </a>
+            <span>Home</span>
+          </Link>
         </li>
-        <li className="nav-list-icon">
-          <a href="#" target="_blank">
-            <img src={mail} alt="Mail Link" />
+
+        <ul className="r-nav-list">
+          <li>
+            <Link
+              className="about-item nav-link"
+              to="/about/"
+              activeClassName="highlight"
+            >
+              <span>About</span>
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className="wip-item nav-link"
+              to="/wip/"
+              activeClassName="highlight"
+            >
+              <span>Wip</span>
+            </Link>
+          </li>
+
+          <a id="stress" className="nav-menu">
+            <CgMenuGridO />
           </a>
-        </li>
+        </ul>
       </ul>
     </nav>
   )

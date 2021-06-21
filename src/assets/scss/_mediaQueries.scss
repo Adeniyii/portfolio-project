@@ -1,0 +1,29 @@
+@media screen and (max-width: 1330px) {
+  .hero-title {
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero-container {
+    justify-content: center;
+
+    &-logo {
+      display: none;
+    }
+    &-text {
+      width: 90%;
+    }
+  }
+  nav {
+    padding: 2em 3em;
+
+    .r-nav-list > li {
+      display: none;
+    }
+
+    #stress {
+      display: inline;
+    }
+  }
+}

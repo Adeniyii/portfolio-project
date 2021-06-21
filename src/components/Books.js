@@ -10,7 +10,7 @@ const Books = prop => {
         className="book-image"
       />
       <h2 className="book-title">{prop.title}</h2>
-      <p className="book-author">{prop.author}</p>
+      <p className="book-author">― {prop.author}</p>
     </div>
   )
 }

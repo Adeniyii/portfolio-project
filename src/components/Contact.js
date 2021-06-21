@@ -1,8 +1,6 @@
 import React, { useState } from "react"
-import animationData from "../assets/asset-animation/53107-success-dibski-1.json"
-import { useForm, ValidationError } from "@formspree/react"
+import { useForm } from "@formspree/react"
 import { FaEnvelope, FaPhoneAlt, FaHome } from "react-icons/fa"
-import Lottie from "react-lottie"
 
 const Contact = props => {
   const [state, handleSubmit] = useForm("myyljwzr", {
@@ -39,37 +37,19 @@ const Contact = props => {
               <div className="field half first">
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" required />
-                <div className="errors">
-                  <ValidationError
-                    prefix="Name"
-                    field="name"
-                    errors={state.errors}
-                  />
-                </div>
+                <div className="errors"></div>
               </div>
 
               <div className="field half">
                 <label htmlFor="email">Email</label>
                 <input type="email" name="email" id="email" required />
-                <div className="errors">
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
-                </div>
+                <div className="errors"></div>
               </div>
 
               <div className="field">
                 <label htmlFor="message">Message</label>
                 <textarea name="message" id="message" rows="6"></textarea>
-                <div className="errors">
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
-                </div>
+                <div className="errors"></div>
               </div>
 
               <ul className="actions">

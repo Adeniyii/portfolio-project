@@ -8,7 +8,8 @@
 @import "about";
 @import "currentlyReading";
 @import "mediaQueries";
-
+@import "error";
+@import "sideMenu";
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,11 @@
   color: #001d9b;
 }
 
+html {
+  scroll-behavior: smooth;
+  // scroll-snap-type: proximity;
+}
+
 body {
   background-color: #13141c;
   transition: all 1s ease;
@@ -38,12 +44,8 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $accent-color;
+    background: $s-color;
   }
-}
-
-section {
-  margin: auto;
 }
 
 .highlight {
@@ -55,4 +57,8 @@ section {
     left: -11px;
     content: "-";
   }
+}
+
+.highlight-2 {
+  color: tomato;
 }

@@ -2,6 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import { CgMenuGridO } from "react-icons/cg"
 const Navbar = () => {
+  function showSideMenu() {
+    document.getElementById("smc").style.transform = "scaleX(1)"
+  }
+
   return (
     <nav className="nav-flex">
       <ul className="nav-container">
@@ -36,7 +40,7 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <a id="stress" className="nav-menu">
+          <a id="stress" className="nav-menu" onClick={() => showSideMenu()}>
             <CgMenuGridO />
           </a>
         </ul>

@@ -27,9 +27,9 @@ const Contact = props => {
 
   return (
     <>
-      <h1 id="contact-head" className="contact-title">
+      {/* <h1 id="contact-head" className="contact-title">
         CONTACT
-      </h1>
+      </h1> */}
       <section id="contact">
         <div className="inner">
           <section className="section-1">

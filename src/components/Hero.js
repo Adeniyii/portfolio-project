@@ -15,7 +15,7 @@ const Hero = () => {
             I’m also a UI/UX designer and general doodler with a keen eye for
             creating engaging UI, bringing products to life.
           </p>
-          <a href="#contact-head" className="hero-cta">
+          <a href="#contact" className="hero-cta">
             <span>Say Hi!</span>
           </a>
         </div>

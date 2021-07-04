@@ -10,10 +10,9 @@ const Project = prop => {
           image={prop.img}
           alt="some message"
           className="article-image"
-          style={{ order: prop.order[0] }}
         ></GatsbyImage>
 
-        <div className="project-description" style={{ order: prop.order[1] }}>
+        <div className="project-description">
           <h2 className="project-desc-title">{prop.title}</h2>
           <p className="project-desc-para">{prop.desc}</p>
           <div className="project-links">

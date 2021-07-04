@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5em;
+  gap: 6em;
   height: 100%;
   max-width: 90%;
   margin: 0 auto;
@@ -17,35 +17,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 30%;
+    // border: 1px solid #fff;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    gap: 1em;
 
-    .about-hero-image {
-      width: 200px;
-      height: 200px;
+    .image-container {
+      width: auto;
+      height: auto;
       border-radius: 10px;
       // margin-right: 1.2em;
-      opacity: 0.5;
+
+      .about-hero-image {
+        // display: none;
+      }
     }
 
     blockquote {
-      margin: 1em 0;
-      font-weight: 400;
+      // margin: 1em 0;
+      font-weight: 300;
       font-size: 1.2em;
 
       &::before {
         content: open-quote;
+        color: tomato;
       }
 
       &::after {
         content: close-quote;
+        color: tomato;
       }
     }
 
     p {
       font-weight: 500;
-      background: $accent-color-2;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 0.8em;
+
+      span {
+        color: tomato;
+      }
     }
   }
 
@@ -59,13 +72,45 @@
       font-family: $s-font;
       font-weight: 500;
       line-height: 1.4;
+      background: linear-gradient(
+        271deg,
+        #a0e9ff 30%,
+        #a162e8 50%,
+        #f093b0 70%,
+        #edca85 94%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
       a {
+        font-size: 1.2em;
         font-family: $s-font;
-        background: $accent-color-2;
+        position: relative;
+        // color: $p-color;
+        background-color: $p-color;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        &::after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          height: 1.5px;
+          left: 0;
+          bottom: 10px;
+          right: left;
+          background: $p-color;
+          transform: scaleX(0);
+          transition: transform 0.15s ease-in-out;
+          transform-origin: right;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
     p {

@@ -114,31 +114,30 @@ input[type="submit"].special {
       padding: 4em 3em 2em 0;
       border-right: 1px solid rgba(212, 212, 255, 0.1);
       width: 60%;
-      margin-right: 0;
     }
 
     .split {
-      margin-left: 0;
       width: 40%;
+      padding: 4em 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
 
       & > section {
-        border-bottom: 1px solid rgba(212, 212, 255, 0.1);
+        // padding-bottom: 2em;
+        // border-bottom: 1px solid rgba(212, 212, 255, 0.1);
       }
 
       & > #last-sect {
-        border-bottom: 0 solid transparent;
-      }
-
-      & > * {
-        padding: 3em 0 1em 3em;
-        position: relative;
+        // border-bottom: 0 solid transparent;
       }
     }
   }
 }
 
 .contact-method {
-  margin: 0 0 2em;
+  // margin: 0 0 2em;
   padding-left: 3.25em;
   position: relative;
 
@@ -153,11 +152,4 @@ input[type="submit"].special {
 #main.alt {
   border-bottom: 1px solid rgba(212, 212, 255, 0.1);
   border-top: 1px solid rgba(212, 212, 255, 0.1);
-}
-
-.contact-title {
-  margin: 0 0 1em 7em;
-  letter-spacing: 0.4em;
-  position: relative;
-  font-size: 1.5em;
 }

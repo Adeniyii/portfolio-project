@@ -1,4 +1,5 @@
 .projects-section {
+  margin: auto;
   padding: 0 2em;
   max-width: 90%;
   color: #fff;
@@ -11,7 +12,7 @@
     position: sticky;
     opacity: 0.1;
     top: 70px;
-    transform: translate(-50px, 20px);
+    transform: translate(0px, 20px);
     letter-spacing: 0.2em;
     line-height: 1.7;
     text-transform: uppercase;
@@ -66,13 +67,15 @@
       letter-spacing: -1px;
       line-height: 110%;
       font-weight: 400;
-      text-transform: lowercase;
+      // text-transform: lowercase;
       font-family: "Bogart Trial";
     }
 
     p {
       line-height: 1.5rem;
-      font-weight: 100;
+      font-weight: 400;
+      font-size: 0.9em;
+      letter-spacing: 1px;
     }
 
     .project-links {
@@ -123,7 +126,7 @@
         .git-icon {
           position: absolute;
           right: -17px;
-          bottom: 9px;
+          bottom: 7px;
         }
 
         &::after {

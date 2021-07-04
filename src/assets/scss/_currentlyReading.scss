@@ -49,6 +49,11 @@
       height: 300px;
       width: 200px;
       margin-bottom: 2em;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.04);
+      }
     }
 
     .book-title {

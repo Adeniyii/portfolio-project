@@ -26,8 +26,14 @@ nav {
 
       .nav-menu {
         display: none;
+        cursor: pointer;
         transform: scale(1.7);
         padding: 0;
+        transition: transform 0.2s linear;
+
+        &:hover {
+          transform: scale(2);
+        }
       }
     }
 

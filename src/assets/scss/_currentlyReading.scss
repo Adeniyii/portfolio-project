@@ -1,0 +1,70 @@
+.curr-reading {
+  padding: 3em 0;
+  margin: 0 0 20em;
+  overflow: hidden;
+
+  &-heading {
+    width: fit-content;
+    position: relative;
+    font-family: $s-font;
+    font-size: 2.5em;
+    margin: 0 3em 4em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 290%;
+      height: 1px;
+      left: 110%;
+      top: 50%;
+      background-color: $p-color;
+      opacity: 0.2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 1px;
+      right: 110%;
+      bottom: 50%;
+      background-color: $p-color;
+      opacity: 0.2;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 80%;
+    row-gap: 5em;
+
+    .book-container {
+      width: fit-content;
+    }
+
+    .book-image {
+      height: 300px;
+      width: 200px;
+      margin-bottom: 2em;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+
+    .book-title {
+      font-weight: 100;
+      font-size: 1.1em;
+      margin-bottom: 0.5em;
+    }
+
+    .book-author {
+      font-weight: 500;
+      font-size: 0.8em;
+    }
+  }
+}

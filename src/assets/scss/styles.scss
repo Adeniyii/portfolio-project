@@ -1,0 +1,64 @@
+@import "config";
+@import "navbar";
+@import "form";
+@import "hero";
+@import "projects";
+@import "icons";
+@import "footer";
+@import "about";
+@import "currentlyReading";
+@import "mediaQueries";
+@import "error";
+@import "sideMenu";
+* {
+  margin: 0;
+  padding: 0;
+  // color: rgb(209, 210, 211);
+  color: $p-color;
+  font-family: $p-font;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: #e2e8ff;
+  color: #001d9b;
+}
+
+html {
+  scroll-behavior: smooth;
+  // scroll-snap-type: proximity;
+}
+
+body {
+  background-color: #13141c;
+  transition: all 1s ease;
+
+  &::-webkit-scrollbar {
+    width: 0.25em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $s-color;
+  }
+}
+
+.highlight {
+  position: relative;
+  color: tomato;
+  &::before {
+    position: absolute;
+    bottom: 20px;
+    left: -11px;
+    content: "-";
+  }
+}
+
+.highlight-2 {
+  color: tomato;
+}

@@ -1,0 +1,60 @@
+.side-menu-container {
+  display: flex;
+  padding: 2em;
+  flex-direction: column;
+  height: 100vh;
+  background: rgba(0, 0, 0, 1);
+  // backdrop-filter: blur(10px);
+  width: 50vw;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+  gap: 3em;
+
+  #close-smc {
+    font-size: 0.8em;
+    font-weight: 500;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 3em;
+    color: $p-color;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: tomato;
+    }
+  }
+
+  .sml {
+    font-size: 1.5em;
+    font-weight: 400;
+    align-self: flex-start;
+    color: $p-color;
+
+    span {
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 1.5px;
+        left: 0;
+        bottom: 0;
+        right: left;
+        background: $p-color;
+        transform: scaleX(0);
+        transition: transform 0.15s ease-in-out;
+        transform-origin: right;
+      }
+    }
+
+    &:hover span::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}

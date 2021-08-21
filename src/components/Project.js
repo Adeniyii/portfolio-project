@@ -38,10 +38,7 @@ const Project = prop => {
           </div>
         </div>
       </div>
-      <div
-        className="project-tools-container"
-        style={{ justifyContent: prop.custStyle }}
-      >
+      <div className="project-tools-container">
         <div className="fe-tools project-tools">
           <h3>Frontend</h3>
           <ul className="tool-list">

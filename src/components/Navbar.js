@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { CgMenuGridO } from "react-icons/cg"
+
 const Navbar = () => {
   function showSideMenu() {
     document.getElementById("smc").style.transform = "scaleX(1)"
@@ -8,7 +9,13 @@ const Navbar = () => {
 
   return (
     <nav className="nav-flex">
-      <ul className="nav-container">
+      <ul
+        className="nav-container"
+        data-sal="slide-right"
+        data-sal-duration="1000"
+        data-sal-delay="500"
+        data-sal-easing="ease-out-circ"
+      >
         <li>
           <Link
             className="home-item nav-link"

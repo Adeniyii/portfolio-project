@@ -23,50 +23,44 @@
 
   &-sub {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: 0.1em;
     line-height: 2;
     margin-top: 2em;
   }
 
   &-cta {
-    font-weight: 500;
-    position: relative;
-    width: 200px;
-    letter-spacing: 0.15em;
-    border-radius: 5px;
-    text-align: center;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     margin-top: 5em;
-    padding: 1em 3em;
-    background: $accent-color-2;
+    background: rgb(33, 32, 42);
+    transition: transform ease-in-out 0.3s;
 
-    &::after {
-      background: #fff;
-      content: "";
-      height: 155px;
-      left: -105px;
-      opacity: 0.15;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      width: 80px;
-      z-index: 3;
+    // .cta-icon {
+    //   stroke-width: 40;
+    // }
+
+    svg path,
+    svg rect {
+      stroke-width: 10;
     }
 
-    &:hover::after {
-      left: 120%;
+    &:hover {
+      // left: 120%;
+      transform: scale(1.2);
     }
   }
 
   &-title {
-    font-size: 4.5em;
+    font-size: 4em;
     letter-spacing: -1.5px;
     line-height: 1;
     font-family: $s-font;
     font-weight: 500;
-    transition: all 0.2s ease-in-out;
 
     #my-name {
       font-family: $s-font;

@@ -1,38 +1,15 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Hero from "../components/Hero"
 import Layout from "../components/Layout"
 import Projects from "../components/Projects"
+import TechStack from "../components/TechStack"
 
-export default function Home({ data }) {
-  const {
-    site: {
-      siteMetadata: { title, description },
-    },
-  } = data
-  console.log(description)
-
+export default function Home() {
   return (
     <Layout>
-      <title>{`Home - ${title}`}</title>
-      <meta name="description" content={description} />
-      <meta
-        name="keywords"
-        content="portfolio web developer backend frontend"
-      />
       <Hero></Hero>
+      <TechStack></TechStack>
       <Projects></Projects>
     </Layout>
   )
 }
-
-export const query = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`

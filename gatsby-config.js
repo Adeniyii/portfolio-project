@@ -24,6 +24,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
     // Needed for dynamic images
     {
       resolve: `gatsby-source-filesystem`,

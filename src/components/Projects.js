@@ -11,17 +11,12 @@ const Projects = () => {
   return (
     <section className="projects-section">
       <h1 className="section-title" id="p-section">
-        ˈprɒdʒ.ekt
+        ˈprɒdʒ.ektz
       </h1>
-      {nodes.map((project, index) => {
-        // Logic to assign alternating css order values
-        let order = [((index + 2) % 2) + 1, ((index + 1) % 2) + 1]
-        let style = order[0] === 1 ? "flex-start" : "flex-end"
+      {nodes.map(project => {
         return (
           <Project
-            order={order}
             key={project.id}
-            custStyle={style}
             title={project.title}
             live={project.liveLink}
             git={project.gitHubLink}

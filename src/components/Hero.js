@@ -16,8 +16,7 @@ const Hero = () => {
             data-sal-delay="100"
             data-sal-easing="ease-out"
           >
-            Hi, i’m <span id="my-name">Ifedáyo.</span>
-            <span className="hero-span"> A software-dev.</span>
+            Hello, i’m <span id="my-name">Ifedáyo Adeniyi.</span>
           </h1>
           <p
             className="hero-sub"
@@ -26,17 +25,16 @@ const Hero = () => {
             data-sal-delay="2000"
             data-sal-easing="ease-out"
           >
-            I’m also a UI/UX designer and general doodler with a keen eye for
-            creating engaging UI, bringing products to life.
+            I'm a staff software engineer working on backend infrastructure at{" "}
+            <a href="https://zuri.chat">Zuri Chat</a>. I am infatuated with
+            test-driven development and software design patterns. I also
+            contribute to open source projects like{" "}
+            <a href="https://github.com/sourcegraph"> Source graph</a>
+            , and share what I learn on my blog:{" "}
+            <a href="https://hashnode.com/@Deniyi">deniyi</a>, or at meetups and
+            conferences.
           </p>
-          <a
-            href="#contact"
-            className="hero-cta"
-            // data-sal="fade"
-            // data-sal-duration="500"
-            // data-sal-delay="1000"
-            // data-sal-easing="ease"
-          >
+          <a href="#contact" className="hero-cta">
             <IoMailOutline className="cta-icon" size="3em" />
           </a>
         </div>
@@ -47,7 +45,28 @@ const Hero = () => {
           data-sal-delay="1000"
           data-sal-easing="ease"
         >
-          <Lottie animationData={animationData} />
+          {/* <Lottie animationData={animationData} /> */}
+          <div className="card">
+            <p className="project-stack">javascript, go</p>
+            <h3 className="project-name">ZuriChat</h3>
+            <p className="project-desc">
+              A fully integrated way to connect and interact.
+            </p>
+          </div>
+          <div className="card">
+            <p className="project-stack">javascript, go</p>
+            <h3 className="project-name">ZuriChat</h3>
+            <p className="project-desc">
+              A fully integrated way to connect and interact.
+            </p>
+          </div>
+          <div className="card">
+            <p className="project-stack">javascript, go</p>
+            <h3 className="project-name">ZuriChat</h3>
+            <p className="project-desc">
+              A fully integrated way to connect and interact.
+            </p>
+          </div>
         </div>
       </div>
     </section>

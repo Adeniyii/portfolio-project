@@ -1,16 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;900&display=swap");
-
-@font-face {
-  font-family: "Bogart Trial";
-  src: url("../../fonts/Bogart-Medium-trial.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600;700&display=swap");
 
 /* === Variables === */
-
-// $p-font: "Lato", sans-serif;
-$p-font: "Montserrat", sans-serif;
-$s-font: "Bogart Trial";
+$p-font: "Gothic A1", sans-serif;
+$s-font: "Gothic A1", sans-serif;
 $p-color: rgb(242, 241, 237);
 $s-color: rgb(19, 20, 28);
 $accent-color: linear-gradient(

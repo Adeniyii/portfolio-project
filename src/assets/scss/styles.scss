@@ -1,16 +1,11 @@
 @import "config";
 @import "navbar";
-@import "form";
 @import "hero";
 @import "projects";
 @import "icons";
 @import "footer";
-@import "about";
-@import "currentlyReading";
 @import "mediaQueries";
 @import "error";
-@import "sideMenu";
-@import "techStack";
 
 * {
   margin: 0;
@@ -19,7 +14,6 @@
   color: $p-color;
   font-family: $p-font;
   list-style-type: none;
-  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -34,6 +28,7 @@ html {
 }
 
 body {
+  line-height: 1.5;
   background-color: #13141c;
 
   &::-webkit-scrollbar {
